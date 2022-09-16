@@ -1,7 +1,7 @@
-public void setup(){
+void setup(){
   size(500,500);
 }
-public void draw(){
+void draw(){
   for(int z = 0; z<=45; z++){
     background(0);
     scale((int)((Math.random()*500)-250), (int)((Math.random()*500))-250); 
