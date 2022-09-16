@@ -1,9 +1,8 @@
-void setup() {
-  size(500, 500);  //feel free to change the size
-
+public void setup(){
+  size(500,500);
 }
-void draw() {
-    for(int z = 0; z<=45; z++){
+public void draw(){
+  for(int z = 0; z<=45; z++){
     background(0);
     scale((int)((Math.random()*500)-250), (int)((Math.random()*500))-250); 
     scale(0,0);
@@ -13,8 +12,13 @@ void draw() {
     scale(0,0);
     crack((int)((Math.random()*500)-250), (int)((Math.random()*500))-250); 
     crack(0,0);
+    
+  }
+ 
+  
 }
-void scale(int x, int y) {
+void scale(int x, int y){
+  
   fill(#A0A0A0);
   triangle(x + 207,y + 235,x+205,y+200,x+245,y+215); //left ear out
   fill(#FFFFFF);
@@ -31,6 +35,9 @@ void scale(int x, int y) {
   fill(0);
   ellipse(x+220,y+243,5,5); //left eye
   ellipse(x+280,y+243,5,5); //right eye
+  
+  
+   
 }
 void crack(int a, int b){
   
@@ -54,4 +61,3 @@ void crack(int a, int b){
   
    
 }
-
